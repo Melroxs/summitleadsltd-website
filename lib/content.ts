@@ -98,3 +98,19 @@ export const automationServices = [
   "Operational dashboards",
   "Intelligent communication systems",
 ] as const;
+
+
+export const portfolioProjects = [
+  { title: "Mountain Lodge", category: "HOSPITALITY WEBSITE", detail: "Premium lodge experience with destination storytelling, accommodation discovery and enquiry-led guest journeys.", url: "https://mountain-lodge-demo-wprxt3am4-melroxs-projects.vercel.app/", label: "Explore lodge concept" },
+  { title: "Personal Stylist & Shopper", category: "PERSONAL BRAND / SERVICES", detail: "Editorial-style personal shopping experience designed around service discovery, style confidence and consultation enquiries.", url: "https://personal-stylist-shopper-demo-orl1ra43m-melroxs-projects.vercel.app/", label: "Explore stylist concept" },
+  { title: "NPP Roofing & Restoration", category: "LEAD GENERATION JOURNEY", detail: "A roofing and restoration customer journey connecting service selection, enquiry capture, ZIP qualification and inspection booking.", url: "https://summit-leads-website-portfolio.vercel.app/", label: "Explore NPP journey", journey: ["Discover", "Choose a service need", "Enquire", "Qualify and follow up", "Book an inspection"], services: ["Preventative roof inspections", "Storm damage and restoration", "Roof repairs and maintenance"] },
+  { title: "G&I Construction", category: "CONSTRUCTION WEBSITE", detail: "Corporate construction concept with service presentation, project portfolio and quote-request journey.", url: "https://gi-construction-demo-r5eldwu8m-melroxs-projects.vercel.app/", label: "Explore construction concept" },
+  { title: "Hair Salon", category: "BEAUTY / BOOKING", detail: "Modern salon concept focused on service discovery, appointment intent and direct customer contact.", url: "https://hair-salon-demo-irz848ivx-melroxs-projects.vercel.app/", label: "Explore salon concept" },
+  { title: "Manna & Quail", category: "FOOD / BAKERY BRAND", detail: "Sweet treats and bakery brand experience with product-led visuals and social-first customer discovery.", url: "https://manna-quail-brackenfell.vercel.app/", label: "Explore Manna & Quail" },
+  { title: "Azure Hair Professionals", category: "SALON BRAND CONCEPT", detail: "Polished beauty brand concept with clear service positioning and enquiry pathways.", url: "https://summit-local-beauty-demos.vercel.app/azure", label: "Explore Azure concept" },
+  { title: "Salt", category: "BEAUTY BRAND CONCEPT", detail: "A refined visual direction for a contemporary beauty and lifestyle business.", url: "https://summit-local-beauty-demos.vercel.app/salt", label: "Explore Salt concept" },
+  { title: "Illumine", category: "WELLNESS BRAND CONCEPT", detail: "A calm, modern digital identity and customer experience concept.", url: "https://summit-local-beauty-demos.vercel.app/illumine", label: "Explore Illumine concept" },
+  { title: "Timeless", category: "BEAUTY BRAND CONCEPT", detail: "An elegant brand-led website direction with a premium service presentation.", url: "https://summit-local-beauty-demos.vercel.app/timeless", label: "Explore Timeless concept" },
+  { title: "DMH", category: "BUSINESS WEBSITE CONCEPT", detail: "A tailored business website concept with a strong hero presentation and direct enquiry calls to action.", url: "https://summit-local-beauty-demos.vercel.app/dmh", label: "Explore DMH concept" },
+  { title: "Local Business Demo Collection", category: "MULTI-BRAND SHOWCASE", detail: "Explore the wider collection of local-business website concepts in one place.", url: "https://summit-local-beauty-demos.vercel.app/", label: "Explore all local demos" },
+] as const;

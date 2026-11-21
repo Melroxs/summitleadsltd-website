@@ -101,12 +101,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section section--demos" id="development">
+        <section className="section section--demos" id="portfolio">
           <div className="section-inner">
-            <SectionKicker index="04 / DIGITAL EXPERIENCES">BUILT TO MAKE VALUE VISIBLE</SectionKicker>
+            <SectionKicker index="04 / SELECTED PORTFOLIO">DIGITAL EXPERIENCES BUILT AROUND BUSINESS</SectionKicker>
             <div className="section-heading">
-              <h2>Your next digital asset<br /><em>starts with a clear idea.</em></h2>
-              <p>Conceptual interface studies show the kind of digital experiences we can shape around real business needs.</p>
+              <h2>From first impression<br /><em>to customer journey.</em></h2>
+              <p>Explore selected website concepts and customer journeys across hospitality, professional services, construction, beauty and lead generation. These are demonstrations of capability, not claims of commissioned client work.</p>
             </div>
             <ConceptShowcase />
           </div>

@@ -8,8 +8,9 @@ export const metadata: Metadata = {
     template: "%s | Summit Leads",
   },
   description: "Build your presence, generate opportunities, and engineer growth with connected digital strategy, development, and automation.",
-  applicationName: "Summit Leads Prototype",
-  robots: { index: false, follow: false, nocache: true },
+  metadataBase: new URL("https://summitleadsltd.com"),
+  applicationName: "Summit Leads Ltd",
+  robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "Summit Leads",
