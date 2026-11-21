@@ -43,7 +43,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> SUMMIT LEADS LTD <i>/</i> DIGITAL GROWTH &amp; TECHNOLOGY</p>
             <h1 id="hero-title">Digital growth<br />for ambitious<br /><em>businesses.</em></h1>
-            <p className="hero-description">We connect customer acquisition, distinctive digital experiences and intelligent systems—shaped around your commercial ambition and designed to turn attention into opportunity.</p>
+            <p className="hero-description">We help ambitious businesses find more customers, present a stronger digital presence and work smarter. From targeted lead generation to high-performing websites and practical AI automation, we build the digital tools that move business forward.</p>
             <div className="hero-actions">
               <Link className="button button--primary" href="/contact?service=Lead%20Generation">Let’s discuss your growth <span aria-hidden="true">↗</span></Link>
               <Link className="text-link" href="#capabilities">Explore Our Capabilities <span aria-hidden="true">↓</span></Link>
@@ -71,8 +71,8 @@ export default function Home() {
             <div className="intro-grid">
               <h2>Growth is not<br />an accident.<br /><em>It is engineered.</em></h2>
               <div className="intro-copy">
-                <p>Businesses need more than a website or another marketing campaign. They need connected systems that turn visibility into opportunities, opportunities into customers, and technology into a competitive advantage.</p>
-                <p>Summit Leads brings customer acquisition, digital development, and intelligent automation together around what moves your business forward.</p>
+                <p>A website alone cannot do the whole job. Your business needs the right people to discover you, a compelling experience that earns their trust, and a simple path from interest to enquiry.</p>
+                <p>Summit Leads brings those moving parts together: targeted prospecting, thoughtful web development and automation that reduces friction in your day-to-day operations.</p>
                 <Link className="inline-link" href="#about">Why Summit Leads <span aria-hidden="true">↗</span></Link>
               </div>
             </div>
@@ -106,7 +106,7 @@ export default function Home() {
             <SectionKicker index="04 / SELECTED PORTFOLIO">DIGITAL EXPERIENCES BUILT AROUND BUSINESS</SectionKicker>
             <div className="section-heading">
               <h2>From first impression<br /><em>to customer journey.</em></h2>
-              <p>Explore selected website concepts and customer journeys across hospitality, professional services, construction, beauty and lead generation. These are demonstrations of capability, not claims of commissioned client work.</p>
+              <p>See how strategy becomes a real digital experience. Explore website concepts and a live lead-generation campaign across hospitality, professional services, construction, beauty and local business. These are demonstrations of capability, not claims of commissioned client work.</p>
             </div>
             <ConceptShowcase />
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
             <SectionKicker index="06 / OUR PROCESS">CLEAR THINKING. THOUGHTFUL EXECUTION.</SectionKicker>
             <div className="section-heading">
               <h2>From first question<br /><em>to what comes next.</em></h2>
-              <p>Good work starts with listening. Then we make a plan, get moving, and keep improving it.</p>
+              <p>No guesswork. We understand the goal, agree the right approach, build and test the solution, then keep refining it as your business evolves.</p>
             </div>
             <ProcessTimeline items={approachSteps} />
           </div>

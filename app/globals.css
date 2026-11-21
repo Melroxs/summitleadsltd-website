@@ -830,3 +830,44 @@ html, body, .site-shell { background: var(--logo-background); }
 .portfolio-service-tags span { color:#00d4aa; border-color:rgba(0,212,170,.18); }
 @media (max-width:760px) { .portfolio-grid { grid-template-columns:1fr; } .portfolio-card { min-height:300px; } }
 @media (prefers-reduced-motion:reduce) { .portfolio-card { transition:none; } .portfolio-card:hover { transform:none; } }
+
+
+/* Accessibility-first typography uplift across every page and component. */
+html { font-size: 17px; }
+body { font-size: 1rem; }
+p { font-size: max(1rem, 1em); line-height: 1.78; }
+.eyebrow, .section-kicker, .prototype-badge, .hero-bottomline, .hero-visual-caption,
+.service-card-top, .process-step-number, .concept-label, .footer-bottom,
+.service-hero-footnote, .development-steps, .automation-flow, .ecosystem-node-index {
+  font-size: 11px;
+}
+.desktop-nav { font-size: 13px; }
+.hero-description { font-size: clamp(17px, 1.45vw, 20px); line-height: 1.75; max-width: 620px; }
+.hero h1 { font-size: clamp(54px, 7.5vw, 104px); }
+.intro-copy p, .section-heading > p, .ecosystem-heading > p,
+.about-statement > p, .contact-panel-intro > p { font-size: 16px; line-height: 1.85; }
+.button, .text-link, .inline-link { font-size: 12px; }
+.capability-rail { font-size: 11px; }
+.service-card p, .service-card li, .process-step p, .proof-list li { font-size: 15px; line-height: 1.75; }
+.portfolio-card-copy p { font-size: 15px; line-height: 1.8; }
+.portfolio-card-top .eyebrow, .portfolio-card-bottom > span, .portfolio-mini-label { font-size: 11px; }
+.portfolio-journey-steps span, .portfolio-service-tags span { font-size: 12px; }
+.portfolio-card-bottom a { font-size: 15px; }
+.field input, .field textarea, .field select { font-size: 16px; }
+.field > span { font-size: 13px; }
+.footer-column, .footer-contact, .footer-bottom { font-size: 13px; }
+.portfolio-card { padding: 0 0 28px; }
+.portfolio-card-top, .portfolio-card-copy, .portfolio-journey, .portfolio-card-bottom { margin-left: clamp(22px,3vw,34px); margin-right: clamp(22px,3vw,34px); }
+.portfolio-card-top { margin-top: 22px; }
+.portfolio-preview { position:relative; display:block; width:100%; aspect-ratio: 16 / 9; overflow:hidden; border-bottom:1px solid rgba(255,255,255,.12); background:linear-gradient(135deg,#101e32,#050a13); }
+.portfolio-preview img { display:block; width:100%; height:100%; object-fit:cover; object-position:top center; transition:transform .55s ease,filter .55s ease; }
+.portfolio-preview-overlay { position:absolute; inset:auto 0 0; padding:28px 18px 14px; color:#f5f7f7; font:11px var(--font-mono); letter-spacing:.12em; background:linear-gradient(transparent,rgba(2,5,10,.85)); opacity:.82; }
+.portfolio-card:hover .portfolio-preview img { transform:scale(1.035); filter:saturate(1.12); }
+@media (max-width:760px) {
+  html { font-size:16px; }
+  .hero-description { font-size:17px; }
+  .intro-copy p, .section-heading > p, .ecosystem-heading > p,
+  .about-statement > p, .contact-panel-intro > p { font-size:16px; }
+  .portfolio-preview { aspect-ratio:16/10; }
+}
+@media (prefers-reduced-motion:reduce) { .portfolio-preview img { transition:none; } }

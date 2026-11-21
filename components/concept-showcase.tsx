@@ -5,6 +5,7 @@ export function ConceptShowcase() {
     <div className="portfolio-grid">
       {portfolioProjects.map((project, index) => (
         <article className={`portfolio-card portfolio-card--${(index % 4) + 1}`} key={project.title}>
+          <a className="portfolio-preview" href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Preview ${project.title}`}><img src={`https://image.thum.io/get/width/1200/crop/720/noanimate/${project.url}`} alt={`${project.title} website preview`} loading="lazy" /><span className="portfolio-preview-overlay">LIVE CONCEPT PREVIEW ↗</span></a>
           <div className="portfolio-card-top">
             <span className="portfolio-index">0{index + 1}</span>
             <span className="eyebrow">{project.category}</span>
