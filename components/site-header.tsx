@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { BrandWordmark } from "@/components/brand-wordmark";
 
 const links = [
   { label: "Lead generation", href: "/services/lead-generation" },
@@ -22,8 +22,7 @@ export function SiteHeader() {
   return (
     <header className="site-header">
       <Link className="brand" href="/" aria-label="Summit Leads home">
-        <Image src="/logo-images/summit-leads-logo.png" alt="Summit Leads mountain logo" width={68} height={60} className="brand-mark" priority />
-        <span className="brand-wordmark"><strong>SUMMIT</strong><span>LEADS LTD</span></span>
+        <BrandWordmark className="brand-wordmark" />
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation"><NavLinks /></nav>
       <details className="mobile-nav">
