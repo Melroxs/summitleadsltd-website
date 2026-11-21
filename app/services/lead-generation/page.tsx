@@ -135,7 +135,7 @@ export default function LeadGenerationPage() {
               <SectionKicker>LEAD WORKSPACE / LOCAL BUSINESS</SectionKicker>
               <h2>From new enquiry<br /><em>to next action.</em></h2>
               <p className="lead-copy">See a practical lead-management experience for local businesses. The showcase demonstrates how prospect and enquiry information can be brought into one workspace, making it easier to review opportunities and keep follow-up moving.</p>
-              <a className="button button--primary" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer">EXPLORE THE LEADS WORKSPACE <span aria-hidden="true">↗</span></a>
+              <Link className="button button--primary" href="/contact?service=B2B%20Lead%20Generation#contact-form">INQUIRE ABOUT B2B LEAD GENERATION <span aria-hidden="true">↗</span></Link>
             </div>
             <div className="leads-workspace-preview" aria-label="Illustrative local business lead management workspace preview">
               <div className="leads-preview-topbar"><span className="leads-preview-brand"><i /> SUMMIT / LEADS</span><span>WORKSPACE PREVIEW <b>● CONCEPT</b></span></div>
