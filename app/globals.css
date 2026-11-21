@@ -1030,3 +1030,5 @@ p { font-size: max(1rem, 1em); line-height: 1.78; }
  .founder-copy { padding-bottom:12px; }
  .founder-overline { margin-top:8px; }
 }
+
+.hero-brand-stamp { display:block; width:86px; height:48px; object-fit:contain; object-position:left center; filter:drop-shadow(0 3px 12px rgba(214,191,136,.18)); }
