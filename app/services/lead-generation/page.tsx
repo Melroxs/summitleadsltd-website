@@ -67,7 +67,22 @@ export default function LeadGenerationPage() {
           </div>
         </section>
 
-        <section className="section section--service-process">
+                <section className="section section--service-detail leads-workspace-feature">
+          <div className="section-inner service-detail-grid">
+            <div>
+              <SectionKicker>LEAD WORKSPACE / LOCAL BUSINESS</SectionKicker>
+              <h2>From new enquiry<br /><em>to next action.</em></h2>
+              <p className="lead-copy">See a practical lead-management experience for local businesses. The showcase demonstrates how prospect and enquiry information can be brought into one workspace, making it easier to review opportunities and keep follow-up moving.</p>
+              <a className="button button--primary" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer">EXPLORE THE LEADS WORKSPACE <span aria-hidden="true">↗</span></a>
+            </div>
+            <a className="leads-workspace-preview" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer" aria-label="Open the local business leads workspace">
+              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://summit-local-beauty-demos.vercel.app/leads" alt="Local business leads workspace preview" loading="lazy" />
+              <span>OPEN LEADS WORKSPACE ↗</span>
+            </a>
+          </div>
+        </section>
+
+<section className="section section--service-process">
           <div className="section-inner">
             <SectionKicker index="01—06">FROM TARGET MARKET TO SALES PIPELINE</SectionKicker>
             <div className="section-heading"><h2>A clearer path<br /><em>to opportunity.</em></h2><p>Each stage is shaped around the audience, offer, and operating process agreed with the client.</p></div>
