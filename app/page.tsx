@@ -49,7 +49,7 @@ export default function Home() {
               <Link className="text-link" href="#capabilities">Explore Our Capabilities <span aria-hidden="true">↓</span></Link>
             </div>
             <div className="hero-signature">
-              <span className="signature-mark" aria-hidden="true">S<span>+</span></span>
+              <Image src="/logo-images/background-removed-summit-leads-logo.png" alt="" aria-hidden="true" width={110} height={55} unoptimized className="hero-brand-stamp" />
               <p><strong>A business growth &amp; technology partner.</strong><br />From customer acquisition to connected systems.</p>
             </div>
           </div>
