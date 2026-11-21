@@ -806,3 +806,27 @@ html, body, .site-shell { background: var(--logo-background); }
   }
   .demo-chart i { transform: none; }
 }
+
+
+/* Selected portfolio */
+.portfolio-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; margin-top:42px; }
+.portfolio-card { position:relative; display:flex; flex-direction:column; min-height:340px; padding:clamp(22px,3vw,34px); overflow:hidden; border:1px solid rgba(255,255,255,.12); border-radius:18px; background:linear-gradient(145deg,rgba(13,27,47,.96),rgba(4,10,20,.98)); transition:transform .3s ease,border-color .3s ease,background .3s ease; }
+.portfolio-card:hover { transform:translateY(-5px); border-color:rgba(0,212,170,.5); background:linear-gradient(145deg,rgba(17,42,58,.98),rgba(4,10,20,.98)); }
+.portfolio-card--1,.portfolio-card--4 { background:radial-gradient(circle at 90% 8%,rgba(0,212,170,.14),transparent 36%),linear-gradient(145deg,#101e32,#050a13); }
+.portfolio-card-top { display:flex; align-items:center; gap:14px; color:#9eacbd; }
+.portfolio-index { color:#00d4aa; font-size:12px; letter-spacing:.12em; }
+.portfolio-arrow { margin-left:auto; color:#00d4aa; font-size:22px; }
+.portfolio-card-copy { margin:36px 0 24px; max-width:560px; }
+.portfolio-card-copy h3 { margin:0 0 12px; font-size:clamp(24px,3vw,36px); letter-spacing:-.04em; }
+.portfolio-card-copy p { max-width:54ch; color:#aab6c5; line-height:1.7; }
+.portfolio-card-bottom { display:flex; flex-direction:column; align-items:flex-start; gap:18px; margin-top:auto; padding-top:22px; border-top:1px solid rgba(255,255,255,.1); }
+.portfolio-card-bottom > span,.portfolio-mini-label { color:#7e8da0; font-size:9px; letter-spacing:.12em; }
+.portfolio-card-bottom a { color:#00d4aa; font-size:13px; font-weight:700; text-decoration:none; }
+.portfolio-card-bottom a:hover { color:#fff; }
+.portfolio-journey { margin:0 0 22px; padding:16px; border:1px solid rgba(0,212,170,.22); border-radius:12px; background:rgba(0,212,170,.045); }
+.portfolio-journey-steps { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+.portfolio-journey-steps span,.portfolio-service-tags span { padding:7px 9px; border:1px solid rgba(255,255,255,.1); border-radius:7px; color:#c4d0dd; font-size:10px; }
+.portfolio-service-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.portfolio-service-tags span { color:#00d4aa; border-color:rgba(0,212,170,.18); }
+@media (max-width:760px) { .portfolio-grid { grid-template-columns:1fr; } .portfolio-card { min-height:300px; } }
+@media (prefers-reduced-motion:reduce) { .portfolio-card { transition:none; } .portfolio-card:hover { transform:none; } }
