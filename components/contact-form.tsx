@@ -19,18 +19,25 @@ export function ContactForm({ initialService }: { initialService?: string }) {
     setMessage("Sending your enquiry securely…");
     data.set("_subject", "New Summit Leads website enquiry");
     data.set("_template", "table");
-    data.set("_captcha", "false");
     data.set("_replyto", String(data.get("email") ?? ""));
+    data.set("_url", window.location.href);
 
     try {
       const response = await fetch("https://formsubmit.co/ajax/hello@summitleadsltd.com", {
         method: "POST",
-        headers: { Accept: "application/json" },
-        body: data,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(Object.fromEntries(data.entries())),
       });
       const result = await response.json();
       if (!response.ok || result.success !== "true" && result.success !== true) {
-        throw new Error(result.message || "The form service did not accept the enquiry.");
+        const detail = String(result.message || "");
+        if (/activation|actived|confirm/i.test(detail)) {
+          throw new Error("Your enquiry service is awaiting its one-time activation. FormSubmit has sent an activation email to hello@summitleadsltd.com. Please check the inbox and spam folder; submissions are held by FormSubmit until the address is confirmed.");
+        }
+        throw new Error(detail || "FormSubmit did not accept the enquiry. Please email hello@summitleadsltd.com or contact us on WhatsApp.");
       }
       setStatus("sent");
       setMessage("Thank you — your enquiry has been submitted. Summit Leads will be in touch.");
@@ -53,7 +60,7 @@ export function ContactForm({ initialService }: { initialService?: string }) {
       <div className="honeypot" aria-hidden="true"><label>Leave this field empty<input type="text" name="_honey" tabIndex={-1} autoComplete="off" /></label></div>
       <div className="form-footer field--full">
         <button className="button button--primary" type="submit" disabled={status === "sending"}>{status === "sending" ? "SENDING ENQUIRY…" : "SUBMIT ENQUIRY"} <span aria-hidden="true">↗</span></button>
-        <p className="form-privacy">Your enquiry is sent to hello@summitleadsltd.com using FormSubmit. You can also <a href="https://wa.me/27739081412?text=Hello%20Summit%20Leads%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">message Summit Leads on WhatsApp</a>.</p>
+        <p className="form-privacy">Your enquiry is securely submitted through FormSubmit to hello@summitleadsltd.com. Spam protection is enabled. You can also <a href="https://wa.me/27739081412?text=Hello%20Summit%20Leads%2C%20I%27d%20like%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">message Summit Leads on WhatsApp</a>.</p>
       </div>
       {message ? <p className={`form-message form-message--${status}`} role="status" aria-live="polite">{message}</p> : null}
     </form>
