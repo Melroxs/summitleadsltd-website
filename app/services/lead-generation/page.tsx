@@ -5,7 +5,6 @@ import { SectionKicker } from "@/components/section-kicker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { leadGenerationServices } from "@/lib/content";
-import { ResilientPreviewImage } from "@/components/resilient-preview-image";
 
 export const metadata = pageMetadata(
   "B2B Lead Generation & Customer Acquisition",
@@ -138,10 +137,17 @@ export default function LeadGenerationPage() {
               <p className="lead-copy">See a practical lead-management experience for local businesses. The showcase demonstrates how prospect and enquiry information can be brought into one workspace, making it easier to review opportunities and keep follow-up moving.</p>
               <a className="button button--primary" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer">EXPLORE THE LEADS WORKSPACE <span aria-hidden="true">↗</span></a>
             </div>
-            <a className="leads-workspace-preview" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer" aria-label="Open the local business leads workspace">
-              <ResilientPreviewImage src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://summit-local-beauty-demos.vercel.app/leads" alt="Local business leads workspace preview" fallbackTitle="Local Business Leads" fallbackLabel="LEAD MANAGEMENT WORKSPACE" />
-              <span>OPEN LEADS WORKSPACE ↗</span>
-            </a>
+            <div className="leads-workspace-preview" aria-label="Illustrative local business lead management workspace preview">
+              <div className="leads-preview-topbar"><span className="leads-preview-brand"><i /> SUMMIT / LEADS</span><span>WORKSPACE PREVIEW <b>● CONCEPT</b></span></div>
+              <div className="leads-preview-body"><aside className="leads-preview-sidebar"><span className="leads-preview-avatar">SL</span><i className="active" /><i /><i /><i /><i /></aside>
+                <div className="leads-preview-main"><div className="leads-preview-heading"><div><small>OVERVIEW / PIPELINE</small><strong>Good morning.</strong><p>Your opportunities, in one place.</p></div><span className="leads-preview-date">TODAY ↗</span></div>
+                  <div className="leads-preview-stats"><div><small>OPEN ENQUIRIES</small><strong>24</strong><em>Across your pipeline</em></div><div><small>FOLLOW-UPS DUE</small><strong>08</strong><em>Ready for next action</em></div><div><small>NEW THIS WEEK</small><strong>12</strong><em>Recently received</em></div></div>
+                  <div className="leads-preview-table"><div className="leads-preview-tablehead"><span>RECENT ENQUIRIES</span><span>STATUS</span><span>NEXT ACTION</span></div>
+                    <div><span><b>Sarah Mitchell</b><small>Website enquiry · 09:42</small></span><i className="status-new">NEW</i><span>Review enquiry ↗</span></div>
+                    <div><span><b>James Carter</b><small>Facebook campaign · Yesterday</small></span><i className="status-follow">FOLLOW-UP</i><span>Call prospect ↗</span></div>
+                    <div><span><b>Olivia Bennett</b><small>Referral · Yesterday</small></span><i className="status-review">IN REVIEW</i><span>Send estimate ↗</span></div></div></div></div>
+              <div className="leads-preview-foot"><span>ILLUSTRATIVE INTERFACE · NOT LIVE CUSTOMER DATA</span><span>LEAD FLOW / 01—03</span></div>
+            </div>
           </div>
         </section>
 
