@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+import { BrandWordmark } from "@/components/brand-wordmark";
 
 export function SiteFooter() {
   return (
     <footer className="site-footer">
       <div className="footer-top">
         <div className="footer-brand-block">
-          <Image src="/logo-images/background-removed-summit-leads-logo.png" alt="Summit Leads logo" width={148} height={130} className="footer-logo" />
+          <BrandWordmark className="footer-wordmark" />
           <p>Business growth, software development and connected technology solutions.</p>
         </div>
         <div className="footer-column">
