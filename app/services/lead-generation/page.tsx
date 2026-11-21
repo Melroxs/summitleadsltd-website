@@ -11,6 +11,11 @@ export const metadata = pageMetadata(
   "Find the right prospects, build focused outreach and turn customer interest into a structured sales pipeline.",
 );
 
+function previewFallback(title: string, label: string) {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102c3b"/><stop offset="1" stop-color="#426c70"/></linearGradient></defs><rect width="1200" height="720" fill="url(#g)"/><circle cx="1040" cy="90" r="260" fill="#d8bd8f" opacity=".18"/><rect x="60" y="55" width="1080" height="610" rx="22" fill="#f5f2ec"/><rect x="60" y="55" width="1080" height="55" rx="22" fill="#e5e1d9"/><circle cx="95" cy="82" r="7" fill="#d58b7b"/><circle cx="120" cy="82" r="7" fill="#d7b66e"/><circle cx="145" cy="82" r="7" fill="#80a58c"/><rect x="430" y="72" width="340" height="18" rx="9" fill="#d0ccc3"/><rect x="100" y="145" width="1000" height="470" rx="12" fill="#183b47"/><text x="155" y="245" fill="#d8bd8f" font-family="Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="5">${label}</text><text x="155" y="345" fill="#fff" font-family="Arial,sans-serif" font-size="58" font-weight="700">${title}</text><rect x="155" y="390" width="450" height="5" rx="3" fill="#fff" opacity=".55"/><rect x="155" y="420" width="330" height="5" rx="3" fill="#fff" opacity=".3"/><rect x="155" y="475" width="205" height="52" rx="26" fill="#d8bd8f"/><text x="257" y="508" text-anchor="middle" fill="#183b47" font-family="Arial,sans-serif" font-size="15" font-weight="700">EXPLORE DEMO</text><text x="1050" y="580" text-anchor="end" fill="#fff" font-family="Arial,sans-serif" font-size="15" letter-spacing="4">SUMMIT LEADS</text></svg>`;
+  return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
 const stages = [
   { number: "01", title: "Define the target market", copy: "Agree the industries, roles, company profile, and location that matter to your business." },
   { number: "02", title: "Identify ideal prospects", copy: "Set practical criteria for organisations and people who fit the offer." },
@@ -61,7 +66,7 @@ export default function LeadGenerationPage() {
               <a className="button button--primary" href="https://npp-campaign-showcase.vercel.app/" target="_blank" rel="noopener noreferrer">VIEW THE NPP CAMPAIGN <span aria-hidden="true">↗</span></a>
             </div>
             <a className="npp-campaign-preview" href="https://npp-campaign-showcase.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open NPP campaign showcase">
-              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://npp-campaign-showcase.vercel.app/" alt="NPP Roofing and Restoration lead generation campaign preview" loading="lazy" />
+              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://npp-campaign-showcase.vercel.app/" alt="NPP Roofing and Restoration lead generation campaign preview" loading="lazy" decoding="async" onError={(event) => { const image = event.currentTarget; if (image.dataset.fallbackApplied !== "true") { image.dataset.fallbackApplied = "true"; image.src = previewFallback("NPP Campaign Journey", "ROOFING & RESTORATION"); } }} />
               <span>OPEN CAMPAIGN SHOWCASE ↗</span>
             </a>
           </div>
@@ -76,7 +81,7 @@ export default function LeadGenerationPage() {
               <a className="button button--primary" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer">EXPLORE THE LEADS WORKSPACE <span aria-hidden="true">↗</span></a>
             </div>
             <a className="leads-workspace-preview" href="https://summit-local-beauty-demos.vercel.app/leads" target="_blank" rel="noopener noreferrer" aria-label="Open the local business leads workspace">
-              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://summit-local-beauty-demos.vercel.app/leads" alt="Local business leads workspace preview" loading="lazy" />
+              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://summit-local-beauty-demos.vercel.app/leads" alt="Local business leads workspace preview" loading="lazy" decoding="async" onError={(event) => { const image = event.currentTarget; if (image.dataset.fallbackApplied !== "true") { image.dataset.fallbackApplied = "true"; image.src = previewFallback("Local Business Leads", "LEAD MANAGEMENT WORKSPACE"); } }} />
               <span>OPEN LEADS WORKSPACE ↗</span>
             </a>
           </div>
