@@ -885,3 +885,27 @@ p { font-size: max(1rem, 1em); line-height: 1.78; }
 .leads-workspace-preview span { display:block; padding:14px 18px; color:var(--gold-bright); font:11px var(--font-mono); letter-spacing:.12em; }
 @media (max-width:760px) { .leads-workspace-preview { margin-top:28px; } }
 @media (prefers-reduced-motion:reduce) { .leads-workspace-preview img { transition:none; } }
+
+
+/* NPP B2B campaign case-study showcase */
+.npp-campaign-library { background: radial-gradient(ellipse at 85% 15%, rgba(0,212,170,.07), transparent 42%), var(--logo-background); }
+.npp-campaign-intro { display:flex; align-items:center; justify-content:space-between; gap:24px; margin:28px 0 34px; padding:22px 24px; border:1px solid rgba(113,224,180,.22); border-radius:14px; background:rgba(8,20,32,.72); }
+.npp-campaign-intro p { max-width:760px; margin:0; color:#c3cfdb; font-size:15px; }
+.npp-campaign-intro strong { color:#fff; }
+.npp-angle-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.npp-angle-card { display:flex; flex-direction:column; min-width:0; padding:22px; border:1px solid rgba(255,255,255,.13); border-radius:16px; background:linear-gradient(145deg,rgba(15,31,49,.96),rgba(5,11,21,.98)); }
+.npp-angle-top { display:flex; flex-direction:column; gap:7px; color:#83d8c2; font:10px var(--font-mono); letter-spacing:.1em; }
+.npp-angle-top span:last-child { color:#91a3b5; font-size:9px; }
+.npp-angle-card h3 { margin:22px 0 10px; font-size:clamp(21px,2vw,27px); line-height:1.2; }
+.npp-angle-card > p { min-height:150px; margin:0 0 20px; color:#aebbc9; font-size:14px; line-height:1.75; }
+.npp-angle-assets { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; margin-top:auto; }
+.npp-angle-assets a { display:block; overflow:hidden; aspect-ratio:1; border-radius:7px; background:#111d2c; }
+.npp-angle-assets img { display:block; width:100%; height:100%; object-fit:cover; transition:transform .35s ease; }
+.npp-angle-assets a:hover img { transform:scale(1.06); }
+.npp-angle-actions { display:flex; flex-direction:column; gap:11px; margin-top:20px; padding-top:17px; border-top:1px solid rgba(255,255,255,.1); }
+.npp-angle-actions a { color:#72dfc1; font-size:10px; font-weight:800; letter-spacing:.08em; }
+.npp-angle-actions a:hover { color:#fff; }
+.npp-campaign-disclaimer { margin-top:22px; color:#8191a3; font-size:12px; line-height:1.7; }
+@media(max-width:900px) { .npp-angle-grid { grid-template-columns:1fr 1fr; } .npp-angle-card > p { min-height:0; } }
+@media(max-width:650px) { .npp-angle-grid { grid-template-columns:1fr; } .npp-campaign-intro { align-items:flex-start; flex-direction:column; } }
+@media(prefers-reduced-motion:reduce) { .npp-angle-assets img { transition:none; } }
