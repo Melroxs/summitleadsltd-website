@@ -7,13 +7,13 @@ export function SiteFooter() {
       <div className="footer-top">
         <div className="footer-brand-block">
           <Image src="/logo-images/background-removed-summit-leads-logo.png" alt="Summit Leads logo" width={148} height={130} className="footer-logo" />
-          <p>Building the systems behind ambitious business growth.</p>
+          <p>Business growth, software development and connected technology solutions.</p>
         </div>
         <div className="footer-column">
           <span className="eyebrow">CAPABILITIES</span>
-          <Link href="/services/lead-generation">Lead generation</Link>
-          <Link href="/services/web-development">Website development</Link>
-          <Link href="/services/ai-automation">AI automation</Link>
+          <Link href="/services/lead-generation">Lead generation &amp; sales</Link>
+          <Link href="/services/web-development">Software development</Link>
+          <Link href="/services/ai-automation">Technology solutions &amp; AI</Link>
         </div>
         <div className="footer-column">
           <span className="eyebrow">EXPLORE</span>
@@ -32,7 +32,7 @@ export function SiteFooter() {
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} SUMMIT LEADS LTD</span>
-        <span>Selected work includes concept demonstrations and portfolio experiences.</span>
+        <span>Selected work includes in-house products, campaign experiences and clearly labelled demonstrations.</span>
         <Link href="#top">BACK TO TOP ↑</Link>
       </div>
     </footer>
