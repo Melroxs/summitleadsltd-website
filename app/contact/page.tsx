@@ -4,8 +4,8 @@ import { SiteHeader } from "@/components/site-header";
 import { pageMetadata } from "@/lib/metadata";
 
 export const metadata = pageMetadata(
-  "Contact",
-  "Tell Summit Leads what you’re trying to achieve across lead generation, digital development, or AI automation.",
+  "Contact Summit Leads",
+  "Discuss lead generation, custom software development, CRM platforms, technology integrations, cloud deployment configuration and AI automation with Summit Leads Ltd.",
 );
 
 type ContactPageProps = { searchParams: Promise<{ service?: string }> };
