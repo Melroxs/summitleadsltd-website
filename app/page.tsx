@@ -30,7 +30,7 @@ export default function Home() {
         <section className="hero" aria-labelledby="hero-title">
           <div className="hero-image" aria-hidden="true">
             <Image
-              src="/manus-storage/summit-northern-lights-globe_4420d71c.webp"
+              src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2200&q=85"
               alt=""
               fill
               priority
