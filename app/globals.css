@@ -987,3 +987,20 @@ p { font-size: max(1rem, 1em); line-height: 1.78; }
 .contact-panel-intro,.contact-form { position:relative; z-index:1; }
 @media(max-width:760px) { .contact-panel::before { background-position:58% center; opacity:.82; } }
 @media(prefers-reduced-motion:reduce) { .contact-panel::before { animation:none!important; } }
+
+
+/* Embossed typographic Summit Leads identity */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&display=swap');
+.brand { min-width: 0; flex: 0 0 auto; }
+.brand-wordmark { display: block; width: 158px; height: 71px; overflow: visible; filter: drop-shadow(0 3px 12px rgba(214,191,136,.12)); }
+.summit-wordmark { display: block; width: 100%; height: 100%; overflow: visible; }
+.footer-wordmark { width: 218px; height: 98px; margin: -10px 0 10px -8px; }
+.brand-mark, .footer-logo { display: none !important; }
+@media (max-width: 1050px) {
+  .brand-wordmark { width: 142px; height: 64px; }
+  .site-header { gap: 14px; }
+}
+@media (max-width: 760px) {
+  .brand-wordmark { width: 136px; height: 61px; }
+  .footer-wordmark { width: 200px; height: 90px; }
+}
