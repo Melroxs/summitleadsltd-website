@@ -8,7 +8,7 @@ import { leadGenerationServices } from "@/lib/content";
 
 export const metadata = pageMetadata(
   "B2B Lead Generation & Customer Acquisition",
-  "Reach the right prospects, qualify enquiries, and build a customer-acquisition system scoped to your business needs.",
+  "Find the right prospects, build focused outreach and turn customer interest into a structured sales pipeline.",
 );
 
 const stages = [
@@ -29,7 +29,7 @@ export default function LeadGenerationPage() {
           <div className="section-inner service-hero-inner">
             <SectionKicker>01 / ATTRACT · CUSTOMER ACQUISITION</SectionKicker>
             <h1>More than leads.<br /><em>Real business<br />opportunities.</em></h1>
-            <p>Lead generation is about reaching the right people, identifying potential customers, capturing interest, and creating a consistent pipeline of opportunities for your sales team.</p>
+            <p>We identify the businesses and decision-makers worth reaching, build focused prospect lists and create a clear route from first contact to qualified sales opportunity.</p>
             <Link className="button button--primary" href="/contact?service=Lead%20Generation">BUILD YOUR CUSTOMER PIPELINE <span aria-hidden="true">↗</span></Link>
             <span className="service-hero-footnote">Scoped around your market, audience, and goals.</span>
           </div>
@@ -49,6 +49,21 @@ export default function LeadGenerationPage() {
                 {leadGenerationServices.map((item, index) => <li key={item}><span>0{index + 1}</span>{item}</li>)}
               </ul>
             </div>
+          </div>
+        </section>
+
+        <section className="section section--service-detail npp-campaign-feature">
+          <div className="section-inner service-detail-grid">
+            <div>
+              <SectionKicker>CAMPAIGN SHOWCASE / NPP</SectionKicker>
+              <h2>See lead generation<br /><em>in the real world.</em></h2>
+              <p className="lead-copy">Explore the NPP Roofing &amp; Restoration campaign journey: from choosing a service need to submitting an enquiry and moving towards an inspection. It demonstrates how a focused campaign can connect the customer journey with lead capture and follow-up.</p>
+              <a className="button button--primary" href="https://npp-campaign-showcase.vercel.app/" target="_blank" rel="noopener noreferrer">VIEW THE NPP CAMPAIGN <span aria-hidden="true">↗</span></a>
+            </div>
+            <a className="npp-campaign-preview" href="https://npp-campaign-showcase.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Open NPP campaign showcase">
+              <img src="https://image.thum.io/get/width/1400/crop/850/noanimate/https://npp-campaign-showcase.vercel.app/" alt="NPP Roofing and Restoration lead generation campaign preview" loading="lazy" />
+              <span>OPEN CAMPAIGN SHOWCASE ↗</span>
+            </a>
           </div>
         </section>
 
