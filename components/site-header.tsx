@@ -3,10 +3,9 @@ import Link from "next/link";
 
 const links = [
   { label: "Lead generation", href: "/services/lead-generation" },
-  { label: "Development", href: "/services/web-development" },
-  { label: "AI automation", href: "/services/ai-automation" },
+  { label: "Software development", href: "/services/web-development" },
+  { label: "Technology solutions", href: "/services/ai-automation" },
   { label: "Portfolio", href: "/#portfolio" },
-  { label: "Our approach", href: "/#approach" },
   { label: "About", href: "/#about" },
 ];
 
@@ -14,7 +13,7 @@ function NavLinks() {
   return (
     <>
       {links.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}
-      <Link className="nav-cta" href="/contact?service=Lead%20Generation">Let’s talk <span aria-hidden="true">↗</span></Link>
+      <Link className="nav-cta" href="/contact">Let’s talk <span aria-hidden="true">↗</span></Link>
     </>
   );
 }
