@@ -878,3 +878,10 @@ p { font-size: max(1rem, 1em); line-height: 1.78; }
 .npp-campaign-preview span { display:block; padding:14px 18px; color:var(--gold-bright); font:11px var(--font-mono); letter-spacing:.12em; }
 @media (max-width:760px) { .npp-campaign-preview { margin-top:28px; } }
 @media (prefers-reduced-motion:reduce) { .npp-campaign-preview img { transition:none; } }
+
+.leads-workspace-preview { position:relative; display:block; align-self:center; overflow:hidden; border:1px solid rgba(113,224,180,.28); border-radius:16px; background:#08111d; box-shadow:0 22px 70px rgba(0,0,0,.28); }
+.leads-workspace-preview img { display:block; width:100%; aspect-ratio:16/10; object-fit:cover; object-position:top; transition:transform .5s ease; }
+.leads-workspace-preview:hover img { transform:scale(1.035); }
+.leads-workspace-preview span { display:block; padding:14px 18px; color:var(--gold-bright); font:11px var(--font-mono); letter-spacing:.12em; }
+@media (max-width:760px) { .leads-workspace-preview { margin-top:28px; } }
+@media (prefers-reduced-motion:reduce) { .leads-workspace-preview img { transition:none; } }
