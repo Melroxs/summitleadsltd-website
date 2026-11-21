@@ -5,7 +5,7 @@ export const services = [
     title: "Lead generation & customer acquisition",
     shortTitle: "Lead generation",
     description:
-      "Reach the right people, create qualified conversations, and build a more consistent path from attention to opportunity.",
+      "Find the businesses and decision-makers worth reaching. We research the market, build focused prospect lists, and create structured outreach that turns the right conversations into sales opportunities.",
     tags: ["B2B prospecting", "Lead capture", "Outreach systems"],
     href: "/services/lead-generation",
     cta: "Explore lead generation",
@@ -17,7 +17,7 @@ export const services = [
     title: "Website & application development",
     shortTitle: "Digital development",
     description:
-      "Build digital experiences that establish credibility, explain your value, and make the next step obvious.",
+      "Launch a website that earns attention, builds trust and makes it easy for customers to take the next step. From polished business websites to custom web applications, we build around your customer journey.",
     tags: ["Business websites", "Web applications", "Customer portals"],
     href: "/services/web-development",
     cta: "Explore development",
@@ -29,7 +29,7 @@ export const services = [
     title: "AI automation & business systems",
     shortTitle: "AI automation",
     description:
-      "Connect everyday tools, reduce repetitive work, and make important business processes easier to scale.",
+      "Put repetitive work on autopilot. We connect your tools, streamline hand-offs and build practical AI-powered workflows that give your team more time for customers and growth.",
     tags: ["AI workflows", "CRM automation", "Integrations"],
     href: "/services/ai-automation",
     cta: "Explore automation",
@@ -38,12 +38,12 @@ export const services = [
 ] as const;
 
 export const approachSteps = [
-  { number: "01", title: "Discover", copy: "Understand the business, market, objectives, and challenges before proposing a solution." },
-  { number: "02", title: "Strategise", copy: "Define the scope, architecture, and implementation approach around a clear commercial goal." },
-  { number: "03", title: "Create", copy: "Design and develop the digital experience or system your business needs." },
-  { number: "04", title: "Connect", copy: "Integrate the platforms, tools, and workflows that make the system useful." },
-  { number: "05", title: "Launch", copy: "Deploy, test, and prepare the solution for real-world use." },
-  { number: "06", title: "Evolve", copy: "Improve, optimise, and support the system as your business grows." },
+  { number: "01", title: "Discover", copy: "We get clear on your offer, customers, market and the outcome that matters most." },
+  { number: "02", title: "Strategise", copy: "We turn the brief into a focused plan, a clear scope and the right delivery approach." },
+  { number: "03", title: "Create", copy: "We design and build the website, campaign or system with your customers in mind." },
+  { number: "04", title: "Connect", copy: "We connect the tools, data and workflows so the pieces work together." },
+  { number: "05", title: "Launch", copy: "We test the experience, refine the details and launch with confidence." },
+  { number: "06", title: "Evolve", copy: "We measure what matters, improve what can perform better and support your next stage." },
 ] as const;
 
 export const ecosystemSteps = [
@@ -101,16 +101,16 @@ export const automationServices = [
 
 
 export const portfolioProjects = [
-  { title: "Mountain Lodge", category: "HOSPITALITY WEBSITE", detail: "Premium lodge experience with destination storytelling, accommodation discovery and enquiry-led guest journeys.", url: "https://mountain-lodge-demo-wprxt3am4-melroxs-projects.vercel.app/", label: "Explore lodge concept" },
-  { title: "Personal Stylist & Shopper", category: "PERSONAL BRAND / SERVICES", detail: "Editorial-style personal shopping experience designed around service discovery, style confidence and consultation enquiries.", url: "https://personal-stylist-shopper-demo-orl1ra43m-melroxs-projects.vercel.app/", label: "Explore stylist concept" },
-  { title: "NPP Roofing & Restoration", category: "LEAD GENERATION JOURNEY", detail: "A roofing and restoration customer journey connecting service selection, enquiry capture, ZIP qualification and inspection booking.", url: "https://summit-leads-website-portfolio.vercel.app/", label: "Explore NPP journey", journey: ["Discover", "Choose a service need", "Enquire", "Qualify and follow up", "Book an inspection"], services: ["Preventative roof inspections", "Storm damage and restoration", "Roof repairs and maintenance"] },
-  { title: "G&I Construction", category: "CONSTRUCTION WEBSITE", detail: "Corporate construction concept with service presentation, project portfolio and quote-request journey.", url: "https://gi-construction-demo-r5eldwu8m-melroxs-projects.vercel.app/", label: "Explore construction concept" },
-  { title: "Hair Salon", category: "BEAUTY / BOOKING", detail: "Modern salon concept focused on service discovery, appointment intent and direct customer contact.", url: "https://hair-salon-demo-irz848ivx-melroxs-projects.vercel.app/", label: "Explore salon concept" },
-  { title: "Manna & Quail", category: "FOOD / BAKERY BRAND", detail: "Sweet treats and bakery brand experience with product-led visuals and social-first customer discovery.", url: "https://manna-quail-brackenfell.vercel.app/", label: "Explore Manna & Quail" },
-  { title: "Azure Hair Professionals", category: "SALON BRAND CONCEPT", detail: "Polished beauty brand concept with clear service positioning and enquiry pathways.", url: "https://summit-local-beauty-demos.vercel.app/azure", label: "Explore Azure concept" },
-  { title: "Salt", category: "BEAUTY BRAND CONCEPT", detail: "A refined visual direction for a contemporary beauty and lifestyle business.", url: "https://summit-local-beauty-demos.vercel.app/salt", label: "Explore Salt concept" },
-  { title: "Illumine", category: "WELLNESS BRAND CONCEPT", detail: "A calm, modern digital identity and customer experience concept.", url: "https://summit-local-beauty-demos.vercel.app/illumine", label: "Explore Illumine concept" },
-  { title: "Timeless", category: "BEAUTY BRAND CONCEPT", detail: "An elegant brand-led website direction with a premium service presentation.", url: "https://summit-local-beauty-demos.vercel.app/timeless", label: "Explore Timeless concept" },
-  { title: "DMH", category: "BUSINESS WEBSITE CONCEPT", detail: "A tailored business website concept with a strong hero presentation and direct enquiry calls to action.", url: "https://summit-local-beauty-demos.vercel.app/dmh", label: "Explore DMH concept" },
-  { title: "Local Business Demo Collection", category: "MULTI-BRAND SHOWCASE", detail: "Explore the wider collection of local-business website concepts in one place.", url: "https://summit-local-beauty-demos.vercel.app/", label: "Explore all local demos" },
+  { title: "Mountain Lodge", category: "HOSPITALITY WEBSITE", detail: "A destination-led lodge experience: discover the setting, explore accommodation and move naturally towards an enquiry.", url: "https://mountain-lodge-demo-wprxt3am4-melroxs-projects.vercel.app/", label: "Explore lodge concept" },
+  { title: "Personal Stylist & Shopper", category: "PERSONAL BRAND / SERVICES", detail: "An editorial service experience that makes the offer clear, builds confidence and invites visitors to book a personal consultation.", url: "https://personal-stylist-shopper-demo-orl1ra43m-melroxs-projects.vercel.app/", label: "Explore stylist concept" },
+  { title: "NPP Roofing & Restoration", category: "LEAD GENERATION CAMPAIGN", detail: "A focused roofing and restoration campaign built to turn local demand into qualified enquiries, service selection and inspection opportunities.", url: "https://npp-campaign-showcase.vercel.app/", label: "View NPP campaign", journey: ["Discover", "Choose a service", "Send an enquiry", "Qualify the opportunity", "Book an inspection"], services: ["Roofing and restoration", "Storm damage", "Inspection requests"] },
+  { title: "G&I Construction", category: "CONSTRUCTION WEBSITE", detail: "A professional construction presence that presents services, showcases project capability and makes requesting a quote straightforward.", url: "https://gi-construction-demo-r5eldwu8m-melroxs-projects.vercel.app/", label: "Explore construction concept" },
+  { title: "Hair Salon", category: "BEAUTY / BOOKING", detail: "A modern salon website focused on service discovery, appointment intent and simple customer contact.", url: "https://hair-salon-demo-irz848ivx-melroxs-projects.vercel.app/", label: "Explore salon concept" },
+  { title: "Manna & Quail", category: "FOOD / BAKERY BRAND", detail: "A product-first bakery and sweet-treats experience designed to make the range look irresistible and guide visitors to social channels and enquiries.", url: "https://manna-quail-brackenfell.vercel.app/", label: "Explore Manna & Quail" },
+  { title: "Azure Hair Professionals", category: "SALON BRAND CONCEPT", detail: "A refined salon concept with confident service presentation, polished visual identity and clear enquiry pathways.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/azure", label: "Explore Azure concept" },
+  { title: "Salt", category: "BEAUTY BRAND CONCEPT", detail: "A contemporary beauty and lifestyle direction with a distinctive visual language and an uncluttered customer journey.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/salt", label: "Explore Salt concept" },
+  { title: "Illumine", category: "WELLNESS BRAND CONCEPT", detail: "A calm, considered wellness experience that puts the brand atmosphere and customer needs at the centre.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/illumine", label: "Explore Illumine concept" },
+  { title: "Timeless", category: "BEAUTY BRAND CONCEPT", detail: "An elegant beauty brand concept with a premium service presentation and a clear route from browsing to enquiry.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/timeless", label: "Explore Timeless concept" },
+  { title: "DMH", category: "BUSINESS WEBSITE CONCEPT", detail: "A tailored business website direction with a strong visual introduction, clear positioning and purposeful calls to action.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/dmh", label: "Explore DMH concept" },
+  { title: "Local Business Demo Collection", category: "MULTI-BRAND SHOWCASE", detail: "A collection of local-business website concepts spanning beauty, wellness and professional services. The showcase is served from the latest verified Vercel deployment.", url: "https://summit-local-beauty-demos-ko38xbtxg-melroxs-projects.vercel.app/", label: "Explore all local demos" },
 ] as const;
