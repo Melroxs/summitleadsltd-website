@@ -2,11 +2,11 @@ export const services = [
   {
     number: "01",
     verb: "ATTRACT",
-    title: "Lead generation & customer acquisition",
+    title: "Lead generation & sales enablement",
     shortTitle: "Lead generation",
     description:
-      "Find the businesses and decision-makers worth reaching. We research the market, build focused prospect lists, and create structured outreach that turns the right conversations into sales opportunities.",
-    tags: ["B2B prospecting", "Lead capture", "Outreach systems"],
+      "Reach the organisations and decision-makers that fit your offer. We support targeted prospect research, structured outreach, lead capture and sales workflows that help turn relevant conversations into opportunities.",
+    tags: ["B2B prospecting", "Outreach systems", "Sales workflows"],
     href: "/services/lead-generation",
     cta: "Explore lead generation",
     featured: true,
@@ -14,36 +14,36 @@ export const services = [
   {
     number: "02",
     verb: "BUILD",
-    title: "Website & application development",
-    shortTitle: "Digital development",
+    title: "Software & custom application development",
+    shortTitle: "Software development",
     description:
-      "Launch a website that earns attention, builds trust and makes it easy for customers to take the next step. From polished business websites to custom web applications, we build around your customer journey.",
-    tags: ["Business websites", "Web applications", "Customer portals"],
+      "Build more than a brochure website. We scope and develop business websites, custom web applications, customer portals, booking platforms, CRM systems and operational dashboards around the way your business works.",
+    tags: ["Custom web applications", "CRM & dashboards", "Portals & platforms"],
     href: "/services/web-development",
-    cta: "Explore development",
+    cta: "Explore software development",
     featured: false,
   },
   {
     number: "03",
-    verb: "AUTOMATE",
-    title: "AI automation & business systems",
-    shortTitle: "AI automation",
+    verb: "CONNECT",
+    title: "Technology solutions, integrations & AI",
+    shortTitle: "Technology solutions",
     description:
-      "Put repetitive work on autopilot. We connect your tools, streamline hand-offs and build practical AI-powered workflows that give your team more time for customers and growth.",
-    tags: ["AI workflows", "CRM automation", "Integrations"],
+      "Make your technology work together. We help assess and connect APIs, databases, cloud hosting, deployment environments and business tools, then apply practical AI and automation where it improves the workflow.",
+    tags: ["API & database integration", "Cloud & deployment", "AI & automation"],
     href: "/services/ai-automation",
-    cta: "Explore automation",
+    cta: "Explore technology solutions",
     featured: false,
   },
 ] as const;
 
 export const approachSteps = [
-  { number: "01", title: "Discover", copy: "We get clear on your offer, customers, market and the outcome that matters most." },
-  { number: "02", title: "Strategise", copy: "We turn the brief into a focused plan, a clear scope and the right delivery approach." },
-  { number: "03", title: "Create", copy: "We design and build the website, campaign or system with your customers in mind." },
-  { number: "04", title: "Connect", copy: "We connect the tools, data and workflows so the pieces work together." },
-  { number: "05", title: "Launch", copy: "We test the experience, refine the details and launch with confidence." },
-  { number: "06", title: "Evolve", copy: "We measure what matters, improve what can perform better and support your next stage." },
+  { number: "01", title: "Discover", copy: "We get clear on your offer, customers, market, existing systems and the outcome that matters most." },
+  { number: "02", title: "Assess", copy: "We review the requirements and current environment, identify dependencies and agree a realistic scope." },
+  { number: "03", title: "Design", copy: "We shape the customer experience, technical approach and delivery plan around the business need." },
+  { number: "04", title: "Build & connect", copy: "We develop the website, application or workflow and connect the tools, data and services it needs." },
+  { number: "05", title: "Test & launch", copy: "We verify the experience, resolve issues and prepare the agreed solution for launch." },
+  { number: "06", title: "Support & evolve", copy: "We document the handover, support the next stage and refine the solution as needs change." },
 ] as const;
 
 export const ecosystemSteps = [
@@ -77,33 +77,34 @@ export const leadGenerationServices = [
 ] as const;
 
 export const webDevelopmentServices = [
+  "Custom web application development",
   "Corporate and professional business websites",
   "High-converting landing pages",
-  "E-commerce platforms",
-  "Custom web applications",
   "Customer portals and booking platforms",
-  "CRM systems and business dashboards",
+  "CRM systems and sales platforms",
+  "Operational dashboards and admin interfaces",
+  "Database-backed applications and API integrations",
   "Website redesign, optimisation, maintenance, and support",
 ] as const;
 
 export const automationServices = [
-  "AI-powered workflows",
-  "AI customer support assistants",
-  "Automated enquiry handling",
+  "Technology and infrastructure assessment",
+  "API and third-party platform integrations",
+  "Database architecture and data-flow integration",
+  "Cloud hosting and deployment configuration",
+  "Authentication and access-control integration",
+  "AI-powered workflows and assistants",
+  "Automated enquiry handling and lead qualification",
   "Intelligent appointment scheduling",
-  "Automated lead qualification",
-  "CRM automation",
-  "Business process automation",
-  "Custom AI integrations",
-  "Operational dashboards",
-  "Intelligent communication systems",
+  "CRM and business process automation",
+  "Operational dashboards and system monitoring",
+  "Technical documentation and handover support",
 ] as const;
-
 
 export const portfolioProjects = [
   { title: "Mountain Lodge", category: "HOSPITALITY WEBSITE", detail: "A destination-led lodge experience: discover the setting, explore accommodation and move naturally towards an enquiry.", url: "https://mountain-lodge-demo-beta.vercel.app/", label: "Explore lodge concept" },
   { title: "Personal Stylist & Shopper", category: "PERSONAL BRAND / SERVICES", detail: "An editorial service experience that makes the offer clear, builds confidence and invites visitors to book a personal consultation.", url: "https://personal-stylist-shopper-demo.vercel.app/", label: "Explore stylist concept" },
-  { title: "NPP Roofing & Restoration", category: "LEAD GENERATION CAMPAIGN", detail: "A focused roofing and restoration campaign built to turn local demand into qualified enquiries, service selection and inspection opportunities.", url: "https://npp-campaign-showcase.vercel.app/", thumbnail: "https://image.thum.io/get/width/1200/crop/720/noanimate/https://npp-campaign-showcase.vercel.app/", label: "View NPP campaign", journey: ["Discover", "Choose a service", "Send an enquiry", "Qualify the opportunity", "Book an inspection"], services: ["Roofing and restoration", "Storm damage", "Inspection requests"] },
+  { title: "NPP Roofing & Restoration", category: "LEAD GENERATION CAMPAIGN", detail: "A focused roofing and restoration campaign built to turn local demand into qualified enquiries, service selection and inspection opportunities.", url: "https://npp-campaign-showcase.vercel.app/", label: "View NPP campaign", journey: ["Discover", "Choose a service", "Send an enquiry", "Qualify the opportunity", "Book an inspection"], services: ["Roofing and restoration", "Storm damage", "Inspection requests"] },
   { title: "G&I Construction", category: "CONSTRUCTION WEBSITE", detail: "A professional construction presence that presents services, showcases project capability and makes requesting a quote straightforward.", url: "https://gi-construction-demo.vercel.app/", label: "Explore construction concept" },
   { title: "Hair Salon", category: "BEAUTY / BOOKING", detail: "A modern salon website focused on service discovery, appointment intent and simple customer contact.", url: "https://hair-salon-demo-phi.vercel.app/", label: "Explore salon concept" },
   { title: "Manna & Quail", category: "FOOD / BAKERY BRAND", detail: "A product-first bakery and sweet-treats experience designed to make the range look irresistible and guide visitors to social channels and enquiries.", url: "https://manna-quail-brackenfell.vercel.app/", label: "Explore Manna & Quail" },
