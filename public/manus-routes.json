@@ -1,0 +1,11 @@
+{
+  "routes": [
+    { "path": "/", "title": "Summit Leads — Digital Growth & Technology" },
+    { "path": "/services/lead-generation", "title": "Lead Generation" },
+    { "path": "/services/web-development", "title": "Website & Application Development" },
+    { "path": "/services/ai-automation", "title": "AI Automation & Business Systems" },
+    { "path": "/contact", "title": "Contact Summit Leads" },
+    { "path": "/privacy", "title": "Privacy Policy — Draft" },
+    { "path": "/terms", "title": "Terms of Service — Draft" }
+  ]
+}
