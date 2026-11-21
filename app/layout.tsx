@@ -7,7 +7,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Summit Leads Ltd",
   url: "https://summitleadsltd.com",
-  logo: "https://summitleadsltd.com/logo-images/summit-leads-logo.png",
+  logo: "https://summitleadsltd.com/logo-images/background-removed-summit-leads-logo.png",
   email: "hello@summitleadsltd.com",
   description: "Summit Leads Ltd helps businesses grow through lead generation, custom software development, technology integrations and practical AI automation.",
   knowsAbout: [
