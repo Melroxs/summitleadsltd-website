@@ -2,7 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 
-const serviceOptions = ["Lead Generation", "Website Development", "Application Development", "AI Automation", "CRM & Business Systems", "Multiple Services", "Other"];
+const serviceOptions = ["Lead Generation", "Software Development", "Website Development", "Application Development", "Technology Solutions & Infrastructure", "AI Automation", "CRM & Business Systems", "Multiple Services", "Other"];
 
 export function ContactForm({ initialService }: { initialService?: string }) {
   const [status, setStatus] = useState<"idle" | "sent" | "error" | "sending">("idle");
