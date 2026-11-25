@@ -157,31 +157,6 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section founder-section" id="founder" aria-labelledby="founder-title">
-          <div className="section-inner founder-layout">
-            <div className="founder-portrait-wrap">
-              <Image
-                src="https://raw.githubusercontent.com/Melroxs/summitleadsltd-website/main/logo%20images/d8454843-8e1f-4c30-a2e4-6a5bec5d12d1%20(2).jpg"
-                alt="Melissa October, Founder and Managing Director of Summit Leads Ltd"
-                width={900}
-                height={1100}
-                unoptimized
-                className="founder-portrait"
-              />
-              <span className="founder-image-caption">SUMMIT LEADS LTD <i /> FOUNDER</span>
-            </div>
-            <div className="founder-copy">
-              <SectionKicker index="08 / LEADERSHIP">A FOUNDER-LED APPROACH</SectionKicker>
-              <p className="founder-overline">MEET THE FOUNDER</p>
-              <h2 id="founder-title">Melissa<br /><em>October.</em></h2>
-              <p className="founder-role">Founder &amp; Managing Director</p>
-              <p>Summit Leads was founded on a simple belief: business growth and technology should work together. I bring a hands-on, practical approach to helping businesses strengthen how they attract customers, serve them and operate behind the scenes.</p>
-              <p>From digital experiences and lead-generation systems to custom software and connected workflows, our focus is on understanding the business first—and building solutions that make a meaningful difference.</p>
-              <Link className="inline-link" href="/contact">Connect with Summit Leads <span aria-hidden="true">↗</span></Link>
-            </div>
-          </div>
-        </section>
-
         <ContactPanel />
       </main>
       <SiteFooter />
